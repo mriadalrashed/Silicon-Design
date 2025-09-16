@@ -19,18 +19,19 @@
 /* ============================= */
 
 /* Global Rules */
-html {
-  scroll-behavior: smooth;
-  font-size: 16px;
-}
+
 
 * {
   box-sizing: border-box;
 }
 
-body {
+html,body {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
   font-family: "Manrope", sans-serif;
-  margin: 0;
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body.dark-mode {
@@ -58,7 +59,7 @@ header {
   width: 100%;
   height: 4.75rem;
   z-index: 1000;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
 }
 
 body.dark-mode header { background: transparent; }
@@ -317,3 +318,76 @@ body.dark-mode .store-btn {
 }
 
 /* ---- End Hero ---- */
+
+/* Start Brands */
+.brands {
+  padding: 40px 0;
+  background: var(--secondary-color);
+}
+body.dark-mode .brands { background: var(--dark-mode-color) }
+body.dark-mode .brands .brand-logo { background: none; border: 1px solid #374151; box-shadow: 0 1px 4px rgba(0,0,0,0.2); }
+body.dark-mode .brands .brand-logo:hover { box-shadow: 0 4px 12px rgba(247, 245, 245, 0.4); }
+
+/* Flex container for logos */
+.brands .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;          /* space between logos */
+  flex-wrap: wrap;    /* wrap on small screens */
+}
+
+/* Logo “card” */
+.brand-logo {
+  display: flex;
+  justify-content: center;
+  width: 191px;          
+  height: 100px; 
+  background: #ffff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  transition: box-shadow 0.3s ease;
+  align-items: center;
+}
+
+.brand-logo:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Logo image */
+.brand-logo img {
+  max-width: 120px;
+  height: auto;
+  transition: opacity 0.3s ease, filter 0.3s ease, transform 0.3s ease;
+  object-fit: contain;
+  
+}
+
+.brand-logo img:hover {
+  opacity: 1;
+  filter: grayscale(0);
+  transform: scale(1.05);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .brands{ display: none;
+}}
+
+@media (max-width: 996px) and (min-width: 1200px) {
+  .brand5  { display: none; }
+  .brand6 { display: none; } }
+  .brands .container {gap: 28px; flex-wrap: nowrap;}
+
+
+ @media (max-width: 1200px) {
+  .brand5,
+  .brand6 {
+    display: none;
+  }
+}
+  
+/* End Brands */
+  
