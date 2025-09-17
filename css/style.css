@@ -11,7 +11,7 @@
       rgba(241, 244, 253, 0.07) 83%
     ),
     #0B0F19;
-  --section-padding: 6rem;
+  --section-padding: 4rem;
   --store-bg: #000;
   --store-text: #fff;
 }
@@ -28,7 +28,7 @@
 html,body {
   line-height: 160%;
   font-weight: 400;
-  color: #565973;
+  /* color: #565973; */
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   scroll-behavior: smooth;
@@ -528,3 +528,73 @@ body.dark-mode .features-card-text p {
   .features-header p { text-align: center !important; }}  
 
 /* End Features */
+
+/* Start How-Does-It-Work */
+
+.how-does-it-work {
+  padding: var(--section-padding) ;
+  background: var(--secondary-color);
+  background-color: #F3F6FF;
+}
+body.dark-mode .how-it-works {
+  background: var(--dark-mode-color);
+}
+
+body.dark-mode .how-does-it-work {
+  background-color:hsla(0, 0%, 100%, .04); ;
+  color: #fff;
+}
+
+.how-does-it-work-header h2 {
+  font-size: 2.5rem;   
+  font-weight: 800;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.phone-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6.25rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  position: relative; 
+}
+
+.phone-images .img4 {
+  width: 545.75px;
+  height: auto;
+  display: none;
+}
+.phone-images .img5 {
+  width: 545.75px;
+  height: auto;
+  display: none;
+}
+.step-text h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.step-text p {
+  font-size: 1rem;
+  color: #565973;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Responsive Features */
+@media (max-width: 1200px) {.img-phone {width: 250px;height: auto; }
+.phone-images {gap: 2rem;}}
+
+@media (max-width: 996px) {.phone-images {gap: 2rem;} .img-phone {width: 218px;height: auto;}}
+
+@media (max-width: 768px) {.img1 , .img2 ,.img3 {display: none; } 
+.phone-images .img4 {position: absolute; display: block; width: 200px;height: auto;}
+.phone-images .img5 { display: block; width: 200px;height: auto;}
+.step-text h2 { font-size: 1.35rem; }
+.step-text p { font-size: 0.95rem; }
+.how-does-it-work-header h2  { font-size: 1.744rem; margin-bottom: 2rem; }
+.how-does-it-work {padding: 20px}}
+
+/* End How-Does-It-Work */
