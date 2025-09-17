@@ -4,6 +4,7 @@
   --secondary-color: #ffffff;
   --hover-color: #4044ee;
   --dark-mode-color: #0B0F19;
+  --main-gray-color: #565973;
   --dark-gradient: radial-gradient(
       circle at 40% 35%,
       rgba(99, 102, 241, 0.10) 0%,
@@ -108,7 +109,7 @@ header .button {
 }
 header .button:hover { background: var(--hover-color); }
 
-/* ---- Header ---- */
+/* Responsive Header */
 @media screen and (max-width: 64rem) {
   header .toggle-menu { display: block; }
   header .button { display: none !important; }
@@ -204,8 +205,9 @@ body.dark-mode .hero-text h1 { color: #fff; }
 }
 body.dark-mode .hero-text p { color: #d1d5db; }
 
-/* ---- Hero ---- */
 
+
+/* Responsive Hero */
 @media (max-width: 75rem) { 
 .hero-image img {
     transform: translateY(98px);
@@ -241,15 +243,19 @@ body.dark-mode .hero-text p { color: #d1d5db; }
 
 
 @media (max-width: 768px) {
+   .hero { padding: 0 0 0 0; }
+   .hero-text-buttons { margin-bottom: 1rem; }
    .hero .container {
     grid-template-columns: 1fr;
     text-align: center;
+    min-height: 513px;
   }
+
   .hero .hero-image { display: none; }
   .hero-content h1 { font-size: 40px; }
   .hero-content p { font-size: 16px; }
   .hero-text h1 {
-    font-size: 34px;
+    font-size: 36px;
     font-weight: 1000;
     line-height: 1.4;
     margin-bottom: 42px;
@@ -458,7 +464,7 @@ body.dark-mode .features {
 
 .features-card-text p {
  font-size: 1rem;
- color: #565973;
+ color: var(--main-gray-color);
 }
 .feature-box .box1 {
   display: grid;
@@ -491,7 +497,7 @@ body.dark-mode .feature-title {
 }
 .feature-desc {
   font-size: 1rem;
-  color: #565973;
+  color: var(--main-gray-color);
   line-height: 1.7;
 }
 body.dark-mode .feature-desc {
@@ -578,7 +584,7 @@ body.dark-mode .how-does-it-work {
 }
 .step-text p {
   font-size: 1rem;
-  color: #565973;
+  color: var(--main-gray-color);
   line-height: 1.6;
   text-align: center;
 }
@@ -598,3 +604,131 @@ body.dark-mode .how-does-it-work {
 .how-does-it-work {padding: 20px}}
 
 /* End How-Does-It-Work */
+
+/* Start App Features */
+.app-features {
+  padding: var(--section-padding) ;
+  background: var(--secondary-color);
+}
+
+body.dark-mode .app-features {
+  background: var(--dark-mode-color);
+  color: #fff;
+}
+
+.app-features .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.app-box1 {
+  display: flex; 
+  flex-direction: column;
+}
+
+.app-box1 h1 {
+  font-size: 2rem;   
+  font-weight: 1000;
+  margin-bottom: 2rem;
+  line-height: 130%;
+  width: 400px;
+}
+
+.app-box1-text {
+  display: flex;
+  align-items: center;
+}
+.app-box1-text i {
+  color: var(--main-color);
+  font-size: 1.1rem;
+  margin-right: 0.8rem;
+}
+
+.app-box1-text p {
+  font-size: 1rem;
+  color: var(--main-gray-color);
+  line-height: 1.6;
+  margin: 0.4rem;
+}
+
+.app-box1-button {
+  width: fit-content;
+  height: 2.25rem;
+  border-radius: 0.5rem;
+  background: var(--main-color);
+  color: #fff;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 1.5rem 2rem;
+}
+.app-box1 .app-box1-button {
+  margin-top: 2rem;
+}
+.app-box1-button i { margin-left: 0.5rem; }
+.app-box1-button:hover { background: var(--hover-color); }
+
+.app-box2 {
+  display: flex; 
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.app-box3 img {
+  width: 100%;
+  height: auto;
+ }
+ .app-box4 {
+  display: flex; 
+  flex-direction: column;
+  gap: 2rem;
+ }
+
+.app-box4 h1 {
+  font-size: 2rem;   
+  font-weight: 1000;
+  width: 526px;
+  margin-bottom: 1rem;
+  line-height: 130%;
+ }
+
+ .text-card-box {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+ }
+
+ .features-card-image {
+  width: 60px;
+  height: 60px;
+  background: #6366F114;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;}
+
+  .text-card p {
+    font-size: 1rem;
+    color: var(--main-gray-color);
+    line-height: 1.6;
+    width: 15.188rem;
+  }
+
+body.dark-mode .app-box1 p,
+body.dark-mode .app-box4 p {
+  color: #FFFFFFB3; /* white at 70% opacity */
+}
+
+/* Responsive App Features */
+
+
+@media (max-width: 996px) {
+  .app-features .container {
+  display: none;
+}}
+
+/* End App Features */
