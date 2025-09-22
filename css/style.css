@@ -1015,9 +1015,6 @@ body.dark-mode .testimonials-section  {
   display: none;
 }
 
-
-
-
 /* Show answer when its radio is checked */
 input[type="radio"]:checked + label + .faq-content {
   display: block;
@@ -1179,5 +1176,8 @@ body.dark-mode input[type="radio"]:checked + label .icon-up {
     right: 12px;
   }
 }
- 
- /* Emd faq-section */
+ /* End faq-section */
+
+ /* Start subscribe-section */
+
+ /* End subscribe-section */
