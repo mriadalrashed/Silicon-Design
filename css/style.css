@@ -874,10 +874,6 @@ body.dark-mode .testimonials-section  {
 
  /* Start faq-section */
 
-/* ==============================
-   FAQ Section Container
-   ============================== */
-
 .faq-section {
   padding: var(--section-padding);
 }
@@ -889,9 +885,7 @@ body.dark-mode .testimonials-section  {
   text-align: start;
 }
 
-/* ==============================
-   Contact Info (left side)
-   ============================== */
+/* Contact Info */
 
 .contact h1 {
   font-size: 2rem;
@@ -1179,5 +1173,8 @@ body.dark-mode input[type="radio"]:checked + label .icon-up {
     right: 12px;
   }
 }
- 
- /* Emd faq-section */
+ /* End faq-section */
+
+ /* Start subscribe-section */
+
+ /* End subscribe-section */
