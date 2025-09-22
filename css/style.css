@@ -1207,7 +1207,7 @@ body.dark-mode input[type="radio"]:checked + label .icon-up {
  /* Start subscribe-section */
 
 .subscribe-section {
-  padding: var(--section-padding) 0;
+  padding: 3rem 0;
 }
 
 .subscribe-section .container {
@@ -1353,5 +1353,27 @@ body.dark-mode .subscribe-section .container .notify-box h1 {
   }}
 
 /* End subscribe-section */
+
+
+/* Start footer-section */
+.section-footer {
+  padding-bottom: 3rem ;
+}
+.section-footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-text p {
+  font-size: 0.875rem;
+  color: var(--main-gray-color);
+  margin-bottom: 0;
+}
+
+body.dark-mode .footer-text p {
+  color: var(--main-gray-color)
+}
+
+/* End  footer-section */
 
 
