@@ -87,6 +87,38 @@ body.dark-mode p {
 }
 
 /* Responsive container */
+@media (max-width: 350px) {
+    html, body {
+    overflow-x: hidden; 
+  }
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .hero .container,
+  .features .container,
+  .app-features .container,
+  .faq-section .container {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+  h1, h2, h3, p {
+    max-width: 100%;
+    word-break: break-word;
+  }
+  .store-btn,
+  .app-box1-button,
+  .subscribe-box .subscribe-button {
+    width: 100%;
+    justify-content: center;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 @media (min-width: 48rem) { .container { width: 46.875rem; } }
 @media (min-width: 62rem) { .container { width: 60.625rem; } }
 @media (min-width: 75rem) { .container { width: 82.5rem; } }
