@@ -1069,6 +1069,7 @@ body.dark-mode input[type="radio"]:checked + label .icon-up {
   outline: none;
 }
 .input-form input::placeholder { color: #B4B7C9; }
+body.dark-mode .input-form input { color: #fff;}
 .subscribe-box .subscribe-button {
   width: 8.875rem;
   height: 3.25rem;
