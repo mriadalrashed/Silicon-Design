@@ -1127,6 +1127,20 @@ body.dark-mode .form-email { background-color: hsla(0, 0%, 100%, .02); }
     width: 24.875rem;
     height: 15.688rem;
   }
+  .subscribe-box .subscribe-button {
+    width: 100%;
+  }
+}
+
+@media (max-width:400px) {
+  .subscribe-section .container {
+    width: 20.875rem;
+    height: 15.688rem;
+  }
+
+  .subscribe-box .subscribe-button {
+    width: 100%;
+  }
 }
 
 /* ============================= */
